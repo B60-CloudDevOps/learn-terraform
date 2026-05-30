@@ -47,3 +47,8 @@ To run terraform commands, we need to have terraform installed:
     sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
     sudo yum -y install terraform
 ```
+
+Do we need to provider provider info all the time?
+    Yes, with this only terraform comes to know from where it has to download the plugins mentioned in the code.
+    We can also mentioned the provider version to download against.
+    If you don't mention the provider version, it downloads the latest
