@@ -42,4 +42,8 @@ Whenever you use terraform, here are the 4 commands that you'd be using the most
         $ terraform destroy ( This 100% destros the infrastructure created by the code )
 
 To run terraform commands, we need to have terraform installed:
-    
+```
+    sudo yum install -y yum-utils
+    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    sudo yum -y install terraform
+```
