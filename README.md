@@ -52,3 +52,19 @@ Do we need to provider provider info all the time?
     Yes, with this only terraform comes to know from where it has to download the plugins mentioned in the code.
     We can also mentioned the provider version to download against.
     If you don't mention the provider version, it downloads the latest
+
+If you write the code with giving the provider info, we would get the below error: 
+
+```
+$ terraform init
+    Initializing provider plugins found in the configuration...
+    - Finding latest version of hashicorp/aws...
+    - Installing hashicorp/aws v6.47.0...
+    ╷
+    │ Error: Failed to install provider
+    │
+    │ Error while installing hashicorp/aws v6.47.0: write
+    │ .terraform/providers/registry.terraform.io/hashicorp/aws/6.47.0/linux_amd64/terraform-provider-aws_v6.47.0_x5: no space left on
+    │ device
+
+```
