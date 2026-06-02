@@ -23,3 +23,7 @@ variable "fruits" {
 output "fruits" {
     value = var.fruits
 }
+
+output "favFruit" {
+    value = "Favourite fruit is ${var.fruits[0]}"
+}
