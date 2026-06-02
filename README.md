@@ -137,3 +137,6 @@ Terraform by default pikcs the values from
         terraform.tfvars  ( You don't have to explicitly call it, if the name is dev.tfvars, need to call it )
         or
         *.auto.tfvars
+
+Can we supply a variable from a commandLine or overRide it from the commandLine ?
+    terraform plan -var varName=value
