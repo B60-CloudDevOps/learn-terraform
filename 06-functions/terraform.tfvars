@@ -18,6 +18,6 @@ fruits = {
         color = "blue"
         taste = "sweet"
         price = 80
-        metrics = "grams"
+        # metrics = "grams"
     }
 }
