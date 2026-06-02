@@ -1,5 +1,5 @@
 variable "components" {
-    default = ["catalogue", "shipping", "payment", "frontend"]
+    default = ["frontend", "catalogue", "shipping", "payment" ]
 }
 
 variable "ami_id" {
