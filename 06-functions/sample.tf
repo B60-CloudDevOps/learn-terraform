@@ -15,3 +15,4 @@ output "appleProperties" {
 
 output "blueberryProperties" {
     value = "Blueberries are ${lookup(var.fruits["blueberry"], "color", "unknown")} in color, taste ${lookup(var.fruits["blueberry"], "taste", "unknown")}, cost ${lookup(var.fruits["blueberry"], "price", "unknown")} per ${lookup(var.fruits["blueberry"], "metrics", "unknown")} and are available in ${lookup(var.fruits["blueberry"], "state", "PUNJAB")}"
+}
