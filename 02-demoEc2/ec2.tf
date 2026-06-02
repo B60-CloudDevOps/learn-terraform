@@ -1,4 +1,4 @@
-resource "aws_instance" "this" {
+resource "aws_instance" "that" {
   ami           = "ami-0fcc78c828f981df2"
   instance_type = "t3.medium"
 
@@ -6,3 +6,4 @@ resource "aws_instance" "this" {
     Name = "B60-Demo-EC2"
   }
 }
+
