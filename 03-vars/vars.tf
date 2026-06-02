@@ -25,5 +25,5 @@ output "fruits" {
 }
 
 output "favFruit" {
-    value = "Favourite fruit is ${var.fruits[0]}"
+    value = "Favourite fruit is ${var.fruits[1]}"
 }
