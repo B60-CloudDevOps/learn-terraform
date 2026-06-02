@@ -23,3 +23,7 @@ variable "fruitInfo" {
 output "fruitInfo" {
   value = var.fruitInfo
 }
+
+output "appleInfo" {
+  value = "Apple is ${var.fruitInfo["Apple"]["color"]} in color, tastes ${var.fruitInfo["Apple"]["taste"]} and costs ${var.fruitInfo["Apple"]["price"]}"
+}
