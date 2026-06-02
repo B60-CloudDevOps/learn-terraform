@@ -138,7 +138,10 @@ Terraform by default pikcs the values from
         or
         *.auto.tfvars
 
+        # terraform plan -var-file=xys.tfvars
+
 Can we supply a variable from a commandLine or overRide it from the commandLine ?
     terraform plan -var varName=value
         commandLine variable > than default variable 
-        
+
+
