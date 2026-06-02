@@ -3,7 +3,7 @@ fruits = {
         color = "red"
         taste = "sweet"
         price = 100
-        metrics = "count"
+        metrics = "kg"
         state = "Telangana"
     }
 
