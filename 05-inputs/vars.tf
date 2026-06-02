@@ -1,4 +1,4 @@
-variable "citName" {
+variable "cityName" {
     type        = string
     description = "The name of the city"
 }
