@@ -105,3 +105,18 @@ How can my Ec2 instance authenticate ( without userName/password - accessKey/sec
 Please create an IAM Role in your account with name b60-admin and assign adminstrator access and assign that role to the ec2-workStation.
 Once you attach the IAM Role to the workstation, from that worstation, you can authenticate to the aws account without the need of credentials.
 
+
+# What terraform apply can do ?
+    It can create the resources
+    It can update the resources 
+    It can turn off and on the resources
+    It can destory and recreate the resources
+
+# So, what determines that to happen ?
+    You code and what you mentioned is going to act.
+
+    + : create
+    - : destroy
+    -/+ : destroy and create
+    ~ : updating the resource
+    
