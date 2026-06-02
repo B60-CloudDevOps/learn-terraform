@@ -147,3 +147,9 @@ Can we supply a variable from a commandLine or overRide it from the commandLine 
 # Functions In terraform are in-built, means you cannot create them, all you can do is use them
 
 lookup: This is a function to pick values from maps and if the kep for a specifc value in the map it not available, rather doing an error, it outputs a default value and with this we do "exception handling"
+
+
+# List Inputs are highly sequence oridented:
+Lists are highly dependent on the order of the input, though they are same, aslight change in the order will make them different. So, we should be careful while using lists. In above code, we are creating 4 EC2 instances with names frontend, catalogue, shipping and payment. If we change the order of the list, then the names of the EC2 instances will also change.  Then are in general easy to use and striclty not recommended input.
+
+Always maps or map of maps is the recoemmneded way of passing inpts.
