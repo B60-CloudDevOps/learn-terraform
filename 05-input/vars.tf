@@ -7,3 +7,12 @@ variable "cityName" {
 output "cityName" {
     value = var.cityName
 }
+
+variable "environment" {
+    type        = string
+    description = "The environment for deployment"
+}
+
+output "environment" {
+    value = var.environment
+}
