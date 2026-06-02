@@ -146,4 +146,4 @@ Can we supply a variable from a commandLine or overRide it from the commandLine 
 
 # Functions In terraform are in-built, means you cannot create them, all you can do is use them
 
-lookup: This is a function to pick values from maps and if the kep for a specifc value in the map it not available, rather doing an error, it outputs a default value
+lookup: This is a function to pick values from maps and if the kep for a specifc value in the map it not available, rather doing an error, it outputs a default value and with this we do "exception handling"
