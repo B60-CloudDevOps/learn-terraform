@@ -123,3 +123,17 @@ Once you attach the IAM Role to the workstation, from that worstation, you can a
 # Outputs play a very very very important role in terraform:
     1) They are to display something on the screen
     2) Share the information between the modules.
+
+# We can supply inputs, in these formats:
+    1) Declare a variable and define the default value
+        variable "test" {
+            descrition = "Test Variable"
+            default = test
+        }
+    
+    2) Declare an empty variable and supply the value in values file
+
+Terraform by default pikcs the values from
+        terraform.tfvars  ( You don't have to explicitly call it, if the name is dev.tfvars, need to call it )
+        or
+        *.auto.tfvars
