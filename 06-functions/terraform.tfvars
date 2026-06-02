@@ -3,7 +3,7 @@ fruits = {
         color = "red"
         taste = "sweet"
         price = 100
-        metrics = count
+        metrics = "count"
         state = "Telangana"
     }
 
@@ -11,7 +11,7 @@ fruits = {
         color = "green"
         taste = "sour"
         price = 60
-        metrics = kg
+        metrics = "kg"
     }
 
     blueberry = {
