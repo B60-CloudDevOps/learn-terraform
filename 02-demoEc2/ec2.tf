@@ -6,4 +6,3 @@ resource "aws_instance" "that" {
     Name = "B60-Demo-EC2"
   }
 }
-

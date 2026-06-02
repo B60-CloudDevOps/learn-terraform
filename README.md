@@ -119,4 +119,7 @@ Once you attach the IAM Role to the workstation, from that worstation, you can a
     - : destroy
     -/+ : destroy and create
     ~ : updating the resource
-    
+
+# Outputs play a very very very important role in terraform:
+    1) They are to display something on the screen
+    2) Share the information between the modules.
