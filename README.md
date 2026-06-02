@@ -140,3 +140,5 @@ Terraform by default pikcs the values from
 
 Can we supply a variable from a commandLine or overRide it from the commandLine ?
     terraform plan -var varName=value
+        commandLine variable > than default variable 
+        
