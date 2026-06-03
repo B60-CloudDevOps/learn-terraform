@@ -1,5 +1,6 @@
+# List Input
 variable "components" {
-    default = ["frontend", "catalogue", "shipping", "payment" ]
+    default = ["frontend", "catalogue", "shipping", "payment"]
 }
 
 variable "ami_id" {
