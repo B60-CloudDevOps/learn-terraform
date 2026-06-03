@@ -155,3 +155,37 @@ Lists are highly dependent on the order of the input, though they are same, asli
 Always maps or map of maps is the recoemmneded way of passing inpts.
 
 # Why terraform apply when run multiple times, it's not creating the infra multiple times ?     
+Terraform maintains a file called as STATE, which records the infra provisioned by it in that file related to the code you write.
+Everytime you run the terraform plan, your code is going to be validated with what infra is there now, vs what is mentioned in the code :
+    1) If that infra is not there, it reocrds and create the infra
+    2) If someone has manually changed the instance properties on the ui , when you run the apply, it compared against the STATEFILE and finds the discrepency and updates it as per the code
+
+    Golden Rule: When we built infra with terraform, no more mnaula changes, 100% of the infra management should be by terraform. If not, terraform changes it and for terraform : source of truth is CODE.
+
+    Manual changes are overRiden, whenever you make an apply.
+
+    Terraform Managed/Provisioned infrastructued should be 100% managed via code. No Manual Changes.
+
+    When you run "terraform apply" , the following stateFile and the backup of that file are created in the root directory of your code.
+
+    ```
+        terraform.tfstate
+        terraform.tfstate.backup
+    ```
+
+    What will happen, if I / someone deleted them by mistake ? Terraform is going to lost track of what it has created!!!! This is a dangerous action.
+
+Keep state local to the directory is BAD action ? why, in team based environment, keeping STATE in a central approach is the matured thing.
+
+This state can be placed or centralised in multiple ways as terraform supports in Multiple Backend Types.
+
+Storing / Centralisg State file is very important as the entire information tracking of the infra provisioning is a critical thing:
+( 3 important aspects of organizing the terraform statefile )
+    1) Always STATE File should centralised
+    2) Encrypted
+    3) Version Controlled
+
+Types Of Storage:
+    1) Block Level Storage 
+    2) Object / File / Blob storage  ( S3: Simple Secure Storage )
+    3) Shared Storage
