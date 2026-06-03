@@ -153,3 +153,5 @@ lookup: This is a function to pick values from maps and if the kep for a specifc
 Lists are highly dependent on the order of the input, though they are same, aslight change in the order will make them different. So, we should be careful while using lists. In above code, we are creating 4 EC2 instances with names frontend, catalogue, shipping and payment. If we change the order of the list, then the names of the EC2 instances will also change.  Then are in general easy to use and striclty not recommended input.
 
 Always maps or map of maps is the recoemmneded way of passing inpts.
+
+# Why terraform apply when run multiple times, it's not creating the infra multiple times ?     
