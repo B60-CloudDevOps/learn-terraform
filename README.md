@@ -232,6 +232,7 @@ We will start with v4
     1) Code should be DRY
     2) Re-run of the code should work without any issues.
     3) Secrets should not be hardcoded
+    4) Code should support multi-environment
 
 # In terraform, to keep code DRY, we have to develop the CODE using MODULES
     > Modules help in writing code once and can be used by multiple teams just by supplying inputs
