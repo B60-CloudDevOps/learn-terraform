@@ -23,7 +23,3 @@ variable "components" {
         }
     }
 }
-
-variable "security_group_id" {
-    default = "sg-0b7b1b3a8e31d38ee"
-}
