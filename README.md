@@ -189,3 +189,17 @@ Types Of Storage:
     1) Block Level Storage 
     2) Object / File / Blob storage  ( S3: Simple Secure Storage )
     3) Shared Storage
+
+We will start with v4
+
+
+
+> AWS Can be accessed :
+    1) from UI 
+    2) aws cli 
+    3) sdk
+
+
+# Arguments vs Attributes in terraform:
+    Arguments are inputs to the resource
+    Attributes are the outputs from the resource which are available after the creation of resource ( ip address, instance id, arn , private ip )
