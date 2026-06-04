@@ -221,3 +221,27 @@ We will start with v4
 # How terraform complies the code ?
     Terraform don't mind whether the code is in a single file or in multiple files :
     When ever run the terraform init, terraform loads the *.tf files in an alphabetical orders and compliles them logically.
+
+
+# Goal: ( MVP: Minimal Viable Product )
+    Roboshop Infra should up with sg, route53 dns record, ansible-cm should run on the components as a part of the provisioning.
+    Should also support multi envronment based pattern
+
+
+# NFR:
+    1) Code should be DRY
+    2) Re-run of the code should work without any issues.
+    3) Secrets should not be hardcoded
+
+# In terraform, to keep code DRY, we have to develop the CODE using MODULES
+    > Modules help in writing code once and can be used by multiple teams just by supplying inputs
+    > With modules, code length is going to increase, sharing of outputs among the resources would be tricky, but that should not stop us 
+
+> Root Module vs Child Module:
+    Place where you run the terraform commands
+    Calling Module 
+
+> Modules:
+    Modules can be in the same repository ( Local Modules )
+    Modules can be a the different repository ( Remote Modules )
+    Modules can be provider supplied ( Provider Modules ) [ Less Control Over the features ]
