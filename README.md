@@ -252,3 +252,6 @@ We will start with v4
         - demo-ec2 in modules
     * Initializing provider plugins found in the configuration... ( as per the code )
     * Initializing the backend.
+
+# How can we initize the backend, if the attributes of the backend are on a specific file ?
+     terraform init --backend-config=env/prod/state.tfvars
