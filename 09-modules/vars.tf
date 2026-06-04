@@ -5,3 +5,7 @@ variable "instance_type" {
 variable "instance_name" {
     default = "demo-ec2"
 }
+
+variable "ami_name" {
+    default = "DevOps-LabImage-RHEL9"
+}
