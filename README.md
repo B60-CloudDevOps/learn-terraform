@@ -203,3 +203,21 @@ We will start with v4
 # Arguments vs Attributes in terraform:
     Arguments are inputs to the resource
     Attributes are the outputs from the resource which are available after the creation of resource ( ip address, instance id, arn , private ip )
+
+# How AMI's are built & released & what is the cadence followed as per the best practices : 
+    
+    RHEL9 ( Base AMI Latest v01  ) ---> Make a EC2 Instance with that base AMI & we patch it, do the needed changes ---> Make an AMI ( rhel9-cis-l1-06032026 )
+
+    After a quarter
+
+    RHEL9 ( Base AMI Latest v02 ) ---> Make a EC2 Instance with that base AMI & we patch it, do the needed changes ---> Make an AMI ( rhel9-cis-l1-09032026 )
+
+
+# How can we fetch the information from the already existing resources using terraform ?
+    Datasource :
+        Using datasource, we can fetch the information of the available resources and there are available as per the provider documentation
+
+
+# How terraform complies the code ?
+    Terraform don't mind whether the code is in a single file or in multiple files :
+    When ever run the terraform init, terraform loads the *.tf files in an alphabetical orders and compliles them logically.
