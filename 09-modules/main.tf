@@ -1,5 +1,6 @@
 module "demo-ec2" {
-    source = "./modules"
-    instance_type = var.instance_type 
+    source = "./modules"   # Path of the module, it can be local or remote (github, gitlab, bitbucket, terraform registry)
+    instance_type = var.instance_type
+    instance_name = var.instance_name
 } 
 

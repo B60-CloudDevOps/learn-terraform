@@ -5,6 +5,6 @@ resource "aws_instance" "main" {
   # Exception Handling : If instance_type is not mentioned for any component, then it will take t3.micro as default value.
 
   tags = {
-    Name = sample
+    Name = var.instance_name
   }
 }

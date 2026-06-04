@@ -245,3 +245,9 @@ We will start with v4
     Modules can be in the same repository ( Local Modules )
     Modules can be a the different repository ( Remote Modules )
     Modules can be provider supplied ( Provider Modules ) [ Less Control Over the features ]
+
+# What all "terraform init" can do ?
+    * Iitializing modules...
+        - demo-ec2 in modules
+    * Initializing provider plugins found in the configuration... ( as per the code )
+    * Initializing the backend.
