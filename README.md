@@ -254,4 +254,7 @@ We will start with v4
     * Initializing the backend.
 
 # How can we initize the backend, if the attributes of the backend are on a specific file ?
-     terraform init --backend-config=env/prod/state.tfvars
+
+        $ terraform init --backend-config=env/prod/state.tfvars ; terraform plan --var-file=env/prod/prod.tfvars
+
+# When you're developing the modules, don't loop the resources. Instead, loop the module.
