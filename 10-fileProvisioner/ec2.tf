@@ -21,3 +21,4 @@ provisioner "file" {
 }
 
 # Provisioners are not resources, they are alwasy inside the resource ( actual or null_resource )
+# When you mention a provisioner inside a resource, if the provsioner fails, then it also marks the resource creation as a failure, when you reRun the TF plan, its going to create as the it's marked it as a damaged object
