@@ -258,3 +258,20 @@ We will start with v4
         $ terraform init --backend-config=env/prod/state.tfvars ; terraform plan --var-file=env/prod/prod.tfvars
 
 # When you're developing the modules, don't loop the resources. Instead, loop the module.
+
+
+MVP :
+    1) Terraform should create the infra
+    2) While creating it should also run the ansble playbook on the respective machines, so that APP will be ready
+
+Provisioners in terraform:
+    Their purpose is to execute some task on the top of the created machine or on the top of the machine we are doing the terraform commands.
+
+    1) File Provisioners: This helps in copying the files from source to the created infrastructure by terraform ( Copy needs the source machine to be authenticated to the created machine )
+
+    2) Local Exec: This is to run tasks on the top of the machine, where we are running the terraform commands.
+
+    3) Remote Exec: This is to run tasks on the top of the created machine and this needs authentication from source to the destination machine ( Connection Block )
+
+Provisioners are not independent resources or provisioners are not really resources:
+    That means, they are always supposed to be running inside a resource
