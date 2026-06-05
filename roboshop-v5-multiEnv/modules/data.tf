@@ -18,5 +18,5 @@ data "aws_security_group" "selected" {
 # Datasource for route53 zone, we will use this in the route53 module to create the record in the selected zone 
 data "aws_route53_zone" "selected" {
   name         = var.domain_name
-  private_zone = true
+  private_zone = false
 }
