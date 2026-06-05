@@ -8,8 +8,3 @@ module "ec2" {
     name          = each.key
     instance_type = each.value["instance_type"]
 }
-
-# This is how we fetch the information from the module and use it in the output
-output "env_name" {
-    value = module.ec2.env_name
-}
