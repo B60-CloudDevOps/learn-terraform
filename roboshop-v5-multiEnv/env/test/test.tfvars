@@ -6,26 +6,21 @@ components = {
     catalogue = {
         instance_type = "t3.micro"
     }
-
     redis = {
         instance_type = "t3.micro"
     }
-
     user = {
         instance_type = "t3.micro"
     }
-
     cart = {
         instance_type = "t3.micro"
     }
     mysql = {
         instance_type = "t3.medium"
     }
-
     shipping = {
         instance_type = "t3.medium"
     }
-
     rabbitmq = {
         instance_type = "t3.micro"
     }
