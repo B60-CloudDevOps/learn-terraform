@@ -36,3 +36,4 @@ components = {
 env_name = "test"
 ami_name = "DevOps-LabImage-RHEL9"
 sg_name = "b60-allow-all"
+domain_name = "robotshop.fun"

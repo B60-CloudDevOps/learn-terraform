@@ -7,4 +7,5 @@ module "ec2" {
     sg_name       = var.sg_name
     name          = each.key
     instance_type = each.value["instance_type"]
+    domain_name   = var.domain_name
 }
