@@ -274,4 +274,14 @@ Provisioners in terraform:
     3) Remote Exec: This is to run tasks on the top of the created machine and this needs authentication from source to the destination machine ( Connection Block )
 
 Provisioners are not independent resources or provisioners are not really resources:
-    That means, they are always supposed to be running inside a resource
+    That means, they are always supposed to be running inside a resource.
+
+    Note: Provisioners are create time. that means they wll be executed only during the creaton of the resources that you're pointing. that means, once the resource is created, even if you make some changes on the cm, it won't.because infra is already created. By default, provisioners are creat-time ( But we can use triggers and can make it triggered whenever we want) 
+
+    Provisioners are always to be inside a resource only.
+
+Agenda:
+    1) Make the infra up with ansible CM
+    2) Learn about provisioners
+    3) Configure Hashicorp for centralizing secrets
+    4) Extract the secrets and fetch from vault

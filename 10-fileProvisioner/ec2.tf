@@ -8,7 +8,7 @@ resource "aws_instance" "main" {
   }
 
 provisioner "file" {
-  source      = "provider.tf"
+  source      = "./provider.tf"
   destination = "/home/ec2-user/provider.tf"
 
   connection {
