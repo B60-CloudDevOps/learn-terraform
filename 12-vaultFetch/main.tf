@@ -10,6 +10,6 @@ output "ssh_info" {
 
 # creating a file and saving the output info to that file.
 resource "local_file" "ssh_info_file" {
-  content  = data.vault_generic_secret.ssh_info
+  content  = data.vault_generic_secret.ssh_info.data_json
   filename = "/tmp/ssh_info.txt"
 }
