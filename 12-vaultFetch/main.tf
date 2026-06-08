@@ -4,4 +4,5 @@ data "vault_generic_secret" "ssh_info" {
 
 output "ssh_info" {
   value = data.vault_generic_secret.ssh_info.data
+  sensitive = true
 }
