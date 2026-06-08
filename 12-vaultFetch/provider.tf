@@ -1,6 +1,6 @@
 provider "vault" {
-  url        = "http://vault-general.robotshop.fun:8200"
-  auth_token = var.token
+  address        = "http://vault-general.robotshop.fun:8200"
+  token = var.token
 }
 
 terraform {
