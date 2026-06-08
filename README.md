@@ -285,3 +285,7 @@ Agenda:
     2) Learn about provisioners
     3) Configure Hashicorp for centralizing secrets
     4) Extract the secrets and fetch from vault
+
+> I want infra to be created
+> Then, I want playbook to be executed on the top of the created machine ( remote-exec )
+> ansible-pull needs ansible package to be installed on the created machine.

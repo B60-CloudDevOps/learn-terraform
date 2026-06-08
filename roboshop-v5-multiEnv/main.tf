@@ -1,5 +1,5 @@
 module "ec2" {
-   for_each      = var.components
+    for_each      = var.components
 
     source        = "./modules"
     env_name      = var.env_name   # This is how we supply the value to the module, we can use any variable or hardcoded value here
