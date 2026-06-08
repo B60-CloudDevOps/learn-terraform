@@ -289,3 +289,9 @@ Agenda:
 > I want infra to be created
 > Then, I want playbook to be executed on the top of the created machine ( remote-exec )
 > ansible-pull needs ansible package to be installed on the created machine.
+
+> WORKING
+    > VPN and other APPS
+    > MFA on your cellPhone 
+    > select the prompt on mfa
+    > YubiCo Hardware key
