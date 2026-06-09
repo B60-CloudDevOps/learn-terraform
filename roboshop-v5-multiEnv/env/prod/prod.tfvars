@@ -2,33 +2,43 @@
 components = {
     mongodb = {
         instance_type = "t3.medium"
+        internal = true
     }
     catalogue = {
         instance_type = "t3.micro"
+        internal = true
     }
     redis = {
         instance_type = "t3.micro"
+        internal = true
     }
     user = {
         instance_type = "t3.micro"
+        internal = true
     }
     cart = {
         instance_type = "t3.micro"
+        internal = true
     }
     mysql = {
         instance_type = "t3.medium"
+        internal = true
     }
     shipping = {
         instance_type = "t3.medium"
+        internal = true
     }
     rabbitmq = {
         instance_type = "t3.micro"
+        internal = true
     }
     payment = {
         instance_type = "t3.micro"
+        internal = true
     }
     frontend = {
         instance_type = "t3.micro"
+        internal = false
     }
 }
 

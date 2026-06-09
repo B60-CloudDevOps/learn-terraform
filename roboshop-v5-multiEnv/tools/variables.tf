@@ -22,6 +22,7 @@ variable "tools" {
     default = {
         vault = {
             instance_type = "t3.micro"
+            internal = false
         }
         # gh-runner = {
         #     instance_type = "t3.medium"
