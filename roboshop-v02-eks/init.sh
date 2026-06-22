@@ -1,0 +1,9 @@
+#!/bin/bash
+
+action=$1
+environment=$2
+rm -rf .terraform ;
+git pull ;
+terraform init --backend-config=env/$environment/state.tfvars ;
+terraform plan -var-file=env/$environment/$environment.tfvars
+terraform $action -auto-approve -var-file=env/$environment/$environment.tfvars

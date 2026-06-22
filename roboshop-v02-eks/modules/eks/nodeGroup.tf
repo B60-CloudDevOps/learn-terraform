@@ -1,17 +1,13 @@
-resource "aws_eks_node_group" "example" {
-  cluster_name    = aws_eks_cluster.example.name
-  node_group_name = "example"
-  node_role_arn   = aws_iam_role.example.arn
- subnet_ids = [
-      "subnet-0d1a07bc7ceaf4694",
-      "subnet-05a9dc77897b66c38",
-      "subnet-08c53c78664626d0f"
-    ]
+resource "aws_eks_node_group" "node_group" {
+  cluster_name    = aws_eks_cluster.main.name
+  node_group_name = "${var.cluster_name}-${var.env}-node-group"
+  node_role_arn   = aws_iam_role.node_group.arn
+ subnet_ids = var.subnet_ids
 
   scaling_config {
-    desired_size = 2
-    max_size     = 5
-    min_size     = 1
+    desired_size = var.node_group_desired_size
+    max_size     = var.node_group_max_size
+    min_size     = var.node_group_min_size
   }
 
   update_config {
