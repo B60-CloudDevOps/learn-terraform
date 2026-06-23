@@ -29,3 +29,7 @@ variable "node_group_min_size" {
   type = number
   default = 1
 }
+
+variable "instance_types" {
+  type = list(string)
+}

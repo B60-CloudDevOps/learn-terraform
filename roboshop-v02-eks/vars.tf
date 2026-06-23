@@ -26,3 +26,7 @@ variable "node_group_max_size" {
 variable "node_group_min_size" {
   type = number
 }
+
+variable "instance_types" {
+  type = list(string)
+}
