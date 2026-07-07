@@ -38,10 +38,6 @@ components = {
         instance_type = "t3.micro"
         internal = true
     }
-    frontend = {
-        instance_type = "t3.micro"
-        internal = false
-    }
 }
 
 env_name = "test"
