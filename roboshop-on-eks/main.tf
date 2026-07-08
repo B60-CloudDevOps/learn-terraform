@@ -13,6 +13,8 @@ module "ec2" {
 }
 
 module "eks" {
+    depends_on = [module.ec2]
+     
     source = "./modules/eks"
     cluster_name = var.cluster_name
     env = var.env
