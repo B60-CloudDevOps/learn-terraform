@@ -38,6 +38,7 @@ components = {
         instance_type = "t3.micro"
         internal = true
     }
+
 }
 
 env_name = "test"
