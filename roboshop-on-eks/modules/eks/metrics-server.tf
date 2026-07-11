@@ -1,4 +1,6 @@
 resource "null_resource" "metrics_server" {
+  depends_on = ["aws_eks_cluster.main"]
+
   provisioner "local-exec" {
     command = <<EOT
       aws eks update-kubeconfig --region us-east-1 --name {{ cluster_name }}-{{ env }}
