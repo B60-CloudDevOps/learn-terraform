@@ -1,5 +1,5 @@
 resource "null_resource" "metrics_server" {
-  depends_on = ["aws_eks_cluster.main"]
+  depends_on = ["aws_eks_cluster.main", "aws_eks_node_group.node_group"]
 
   provisioner "local-exec" {
     command = <<EOT
