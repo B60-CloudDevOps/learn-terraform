@@ -26,6 +26,7 @@ variable "tools" {
         }
         github-runner = {
             instance_type = "t3.medium"
+            internal = true
         }
     }
 }
