@@ -24,9 +24,9 @@ variable "tools" {
             instance_type = "t3.micro"
             internal = false
         }
-        # gh-runner = {
-        #     instance_type = "t3.medium"
-        # }
+        github-runner = {
+            instance_type = "t3.medium"
+        }
     }
 }
 
