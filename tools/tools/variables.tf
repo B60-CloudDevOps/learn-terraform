@@ -24,10 +24,10 @@ variable "tools" {
             instance_type = "t3.micro"
             internal = false
         }
-        github-runner = {
-            instance_type = "t3.medium"
-            internal = true
-        }
+        # github-runner = {
+        #     instance_type = "t3.medium"
+        #     internal = true
+        # }
     }
 }
 
