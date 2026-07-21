@@ -15,7 +15,7 @@ resource "aws_instance" "main" {
     encrypted             = true   # Best practice security
     delete_on_termination = true   # Clean up disk if instance is destroyed
   }
-
+}
 output "env_name" {
     value = var.env_name
 }
