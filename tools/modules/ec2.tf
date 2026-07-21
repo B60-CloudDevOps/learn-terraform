@@ -8,7 +8,13 @@ resource "aws_instance" "main" {
   tags = {
     Name = "${var.name}-${var.env_name}"
   }
-}
+
+  root_block_device {
+    volume_size           = 40     # Disk size in GB
+    volume_type           = "gp3"  # General Purpose SSD (Recommended)
+    encrypted             = true   # Best practice security
+    delete_on_termination = true   # Clean up disk if instance is destroyed
+  }
 
 output "env_name" {
     value = var.env_name
